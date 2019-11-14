@@ -42,9 +42,9 @@ with open('results.txt','w') as res:
         logreg.fit(X_train,y_train)
         
         file=file[:len(file)-4]
-        score=logreg.score(X_test,y_test)
+        score=round(logreg.score(X_test,y_test),4)
         total+=score
         res.write(f"{file}:{score}\n")
 
-    average_accuracy=total/49
+    average_accuracy=round(total/49,4)
     res.write(f"Average Accuracy:{average_accuracy}")
