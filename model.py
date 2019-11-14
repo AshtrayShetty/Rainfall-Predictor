@@ -48,11 +48,3 @@ with open('results.txt','w') as res:
 
     average_accuracy=total/49
     res.write(f"Average Accuracy:{average_accuracy}")
-
-    
-    
-
-
-
-
-
